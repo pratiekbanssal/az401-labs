@@ -46,6 +46,20 @@ An AI assistant on its own can only **talk**. It doesn't know what's in your Azu
 
 Each MCP server offers a list of **tools**. A tool is one action, like "get a work item" or "create a pull request". The AI picks the right tool for your question, calls it, and uses the answer.
 
+### Think of it like charging your devices
+
+![MCP is like a USB-C cable](diagrams/01b-mcp-like-usb-c.svg)
+
+| At home | In this lab |
+| --- | --- |
+| **Power board** on the wall | **GitHub Copilot**, your AI agent. It has the "power" (it can think and talk). |
+| **USB-C cable and plug** | **MCP**. One standard plug shape. |
+| **Phone, headphones, tablet** | **Azure DevOps, GitHub, a database.** Each tool that has an **MCP server** has the "port". |
+
+You don't buy a new power board for every device. You use the same cable. In the same way, you don't rebuild your AI for every tool: if the tool has an MCP server, you just plug it in.
+
+And just like a cable only charges the devices you actually plug in, the AI can only use the MCP servers **you** connect.
+
 ### What is the Azure DevOps MCP Server?
 
 ![The Azure DevOps MCP Server](diagrams/02-azure-devops-mcp-server.svg)
