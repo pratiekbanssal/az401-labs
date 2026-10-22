@@ -193,9 +193,18 @@ code --version
 
 ## Step 3: Check your Azure DevOps organization
 
+> **About the commands in this guide:** replace `YOUR_ORG` (and `your-org-name`) with **your** Azure DevOps organization name. That's the part after `dev.azure.com/` in your browser. Under each step there's also a ready-filled version for the author's organization, `pratiekbanssal708`, so you can see exactly what the finished command looks like.
+
 1. Go to `https://dev.azure.com/YOUR_ORG` (replace `YOUR_ORG` with your organization name).
 2. Select **Organization settings** (bottom left) → **Microsoft Entra**.
 3. You should see **"connected to"** and the name of your Entra directory.
+
+<details>
+<summary>Pratiek's org (pratiekbanssal708): copy-paste version</summary>
+
+Open <https://dev.azure.com/pratiekbanssal708/_settings/organizationAad>. That's **Organization settings → Microsoft Entra** directly.
+
+</details>
 
 If it says it is **not connected**, the remote MCP server won't work for this organization. Either connect it (an organization owner can do this on the same page) or use the local server in [Step 11](#step-11-optional-the-local-server).
 
@@ -224,6 +233,15 @@ The MCP server needs something to read. This script builds Priya's world in a ne
 ./scripts/setup.sh YOUR_ORG
 ```
 
+<details>
+<summary>Pratiek's org (pratiekbanssal708): copy-paste version</summary>
+
+```bash
+./scripts/setup.sh pratiekbanssal708
+```
+
+</details>
+
 It takes 1 to 2 minutes and creates:
 
 | What | Details |
@@ -238,7 +256,14 @@ At the end the script prints the **bug number** and **PR number**. Note them dow
 
 **Check it worked:** open `https://dev.azure.com/YOUR_ORG/mcp-lab/_boards/workitems` and you should see the six work items.
 
-> On Windows, run the script from **Git Bash**. If you see `Permission denied`, run `bash scripts/setup.sh YOUR_ORG` instead.
+<details>
+<summary>Pratiek's org (pratiekbanssal708): copy-paste version</summary>
+
+Open <https://dev.azure.com/pratiekbanssal708/mcp-lab/_boards/workitems>
+
+</details>
+
+> On Windows, run the script from **Git Bash**. If you see `Permission denied`, run `bash scripts/setup.sh YOUR_ORG` instead (for the author: `bash scripts/setup.sh pratiekbanssal708`).
 
 ---
 
@@ -265,6 +290,26 @@ sed -i.bak "s/YOUR_ORG/your-org-name/" .vscode/mcp.json && rm .vscode/mcp.json.b
 New-Item -ItemType Directory -Force .vscode | Out-Null
 (Get-Content config/1-read-only.mcp.json) -replace 'YOUR_ORG','your-org-name' | Set-Content .vscode/mcp.json
 ```
+
+<details>
+<summary>Pratiek's org (pratiekbanssal708): copy-paste version</summary>
+
+**macOS / Linux / Git Bash:**
+
+```bash
+mkdir -p .vscode
+cp config/1-read-only.mcp.json .vscode/mcp.json
+sed -i.bak "s/YOUR_ORG/pratiekbanssal708/" .vscode/mcp.json && rm .vscode/mcp.json.bak
+```
+
+**Windows PowerShell:**
+
+```powershell
+New-Item -ItemType Directory -Force .vscode | Out-Null
+(Get-Content config/1-read-only.mcp.json) -replace 'YOUR_ORG','pratiekbanssal708' | Set-Content .vscode/mcp.json
+```
+
+</details>
 
 Your `.vscode/mcp.json` now looks like this:
 
@@ -402,6 +447,24 @@ sed -i.bak "s/YOUR_ORG/your-org-name/" .vscode/mcp.json && rm .vscode/mcp.json.b
 (Get-Content config/2-work-items-write.mcp.json) -replace 'YOUR_ORG','your-org-name' | Set-Content .vscode/mcp.json
 ```
 
+<details>
+<summary>Pratiek's org (pratiekbanssal708): copy-paste version</summary>
+
+**macOS / Linux / Git Bash:**
+
+```bash
+cp config/2-work-items-write.mcp.json .vscode/mcp.json
+sed -i.bak "s/YOUR_ORG/pratiekbanssal708/" .vscode/mcp.json && rm .vscode/mcp.json.bak
+```
+
+**Windows PowerShell:**
+
+```powershell
+(Get-Content config/2-work-items-write.mcp.json) -replace 'YOUR_ORG','pratiekbanssal708' | Set-Content .vscode/mcp.json
+```
+
+</details>
+
 ```json
 {
   "servers": {
@@ -428,7 +491,7 @@ Link pull request <PR number> to bug <bug number> in mcp-lab, and add a comment 
 
 This time Copilot asks for your OK before each **write** tool. Read what it's about to do, then select **Allow**.
 
-**Check it in the browser:** open the bug at `https://dev.azure.com/YOUR_ORG/mcp-lab/_workitems/edit/<bug number>`. You'll see:
+**Check it in the browser:** open the bug at `https://dev.azure.com/YOUR_ORG/mcp-lab/_workitems/edit/<bug number>` (for the author: `https://dev.azure.com/pratiekbanssal708/mcp-lab/_workitems/edit/<bug number>`). You'll see:
 
 - the new **comment** in the Discussion section
 - the **pull request** under Development / Links
@@ -453,6 +516,24 @@ sed -i.bak "s/YOUR_ORG/your-org-name/" .vscode/mcp.json && rm .vscode/mcp.json.b
 ```powershell
 (Get-Content config/3-two-tools-only.mcp.json) -replace 'YOUR_ORG','your-org-name' | Set-Content .vscode/mcp.json
 ```
+
+<details>
+<summary>Pratiek's org (pratiekbanssal708): copy-paste version</summary>
+
+**macOS / Linux / Git Bash:**
+
+```bash
+cp config/3-two-tools-only.mcp.json .vscode/mcp.json
+sed -i.bak "s/YOUR_ORG/pratiekbanssal708/" .vscode/mcp.json && rm .vscode/mcp.json.bak
+```
+
+**Windows PowerShell:**
+
+```powershell
+(Get-Content config/3-two-tools-only.mcp.json) -replace 'YOUR_ORG','pratiekbanssal708' | Set-Content .vscode/mcp.json
+```
+
+</details>
 
 ```json
 {
@@ -555,7 +636,7 @@ cp config/4-local-server.mcp.json .vscode/mcp.json
 }
 ```
 
-Start it the same way as before (**Chat: Open Customizations → MCP Servers → ... → Start Server**). VS Code asks for your organization name, downloads the server with `npx`, and runs it **on your computer** (`type: stdio`). A browser window opens for sign-in. Then repeat any prompt from Step 6.
+Start it the same way as before (**Chat: Open Customizations → MCP Servers → ... → Start Server**). VS Code asks for your organization name (for the author: `pratiekbanssal708`), downloads the server with `npx`, and runs it **on your computer** (`type: stdio`). A browser window opens for sign-in. Then repeat any prompt from Step 6.
 
 **Remote vs local, in one line:** remote = Microsoft runs it and you just connect; local = you run it yourself, for clients that can't use the remote one.
 
@@ -568,7 +649,7 @@ For other clients (Visual Studio, Copilot CLI, Cursor, Claude Desktop), see the 
 | Problem | Fix |
 | --- | --- |
 | Sign-in fails, or "organization not found" | Make sure the organization is connected to Microsoft Entra ID (Step 3) and you signed in with that same account. Personal-account-only organizations don't work with the remote server. |
-| "Server not found" | Check the URL is exactly `https://mcp.dev.azure.com/your-org-name`, with no `dev.azure.com` in the middle and no trailing project name. |
+| "Server not found" | Check the URL is exactly `https://mcp.dev.azure.com/your-org-name` (for example `https://mcp.dev.azure.com/pratiekbanssal708`), with no `dev.azure.com` in the middle and no trailing project name. |
 | Connection refused | Your network must allow HTTPS to `mcp.dev.azure.com`. Try without VPN, or ask your admin to allow that address. |
 | Connected, but no data comes back | You don't have access to that project or item. Open it in the browser with the same account to check. |
 | Copilot doesn't use the tools | Use an **agent** chat session, make sure the server is running, and check its tools are switched on in **Configure Tools**. |
@@ -586,6 +667,15 @@ Delete the demo project (work items, repo, PR and wiki):
 ```bash
 ./scripts/cleanup.sh YOUR_ORG
 ```
+
+<details>
+<summary>Pratiek's org (pratiekbanssal708): copy-paste version</summary>
+
+```bash
+./scripts/cleanup.sh pratiekbanssal708
+```
+
+</details>
 
 Type `y` to confirm. Then remove the local config:
 
