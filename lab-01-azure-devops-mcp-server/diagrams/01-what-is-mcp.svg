@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 540" width="800" height="540" font-family="Helvetica, Arial, sans-serif">
+<rect width="800" height="540" fill="#ffffff"/>
+<defs>
+<marker id="m0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#1e1e1e"/></marker>
+</defs>
+<text x="40" y="54" font-size="30" font-weight="700" fill="#1e1e1e">What is MCP?</text>
+<text x="40" y="84" font-size="18" fill="#555555">A universal plug that lets an AI assistant use your tools</text>
+<rect x="40" y="150" width="200" height="110" rx="12" fill="#a5d8ff" stroke="#4a9eed" stroke-width="2"/>
+<text x="140.0" y="199.6" text-anchor="middle" font-size="18" font-weight="700" fill="#1e1e1e">AI assistant</text>
+<text x="140.0" y="223.0" text-anchor="middle" font-size="18" fill="#1e1e1e">(GitHub Copilot)</text>
+<rect x="300" y="160" width="160" height="90" rx="12" fill="#d0bfff" stroke="#8b5cf6" stroke-width="2"/>
+<text x="380.0" y="199.0" text-anchor="middle" font-size="20" font-weight="700" fill="#1e1e1e">MCP</text>
+<text x="380.0" y="225.0" text-anchor="middle" font-size="20" fill="#1e1e1e">the plug</text>
+<rect x="540" y="120" width="220" height="60" rx="12" fill="#b2f2bb" stroke="#22c55e" stroke-width="2"/>
+<text x="650.0" y="156.3" text-anchor="middle" font-size="18" fill="#1e1e1e">Azure DevOps</text>
+<rect x="540" y="190" width="220" height="60" rx="12" fill="#f1f3f5" stroke="#adb5bd" stroke-width="2"/>
+<text x="650.0" y="226.3" text-anchor="middle" font-size="18" fill="#1e1e1e">GitHub</text>
+<rect x="540" y="260" width="220" height="60" rx="12" fill="#f1f3f5" stroke="#adb5bd" stroke-width="2"/>
+<text x="650.0" y="296.3" text-anchor="middle" font-size="18" fill="#1e1e1e">Your database, files...</text>
+<line x1="240" y1="205" x2="300" y2="205" stroke="#1e1e1e" stroke-width="2" marker-end="url(#m0)"/>
+<line x1="460" y1="205" x2="540" y2="150" stroke="#1e1e1e" stroke-width="2" marker-end="url(#m0)"/>
+<line x1="460" y1="205" x2="540" y2="220" stroke="#1e1e1e" stroke-width="2" marker-end="url(#m0)"/>
+<line x1="460" y1="205" x2="540" y2="290" stroke="#1e1e1e" stroke-width="2" marker-end="url(#m0)"/>
+<rect x="40" y="370" width="340" height="100" rx="12" fill="#ffc9c9" stroke="#ef4444" stroke-width="2"/>
+<text x="210.0" y="402.9" text-anchor="middle" font-size="18" font-weight="700" fill="#1e1e1e">Without MCP</text>
+<text x="210.0" y="426.3" text-anchor="middle" font-size="18" fill="#1e1e1e">The AI can only talk.</text>
+<text x="210.0" y="449.7" text-anchor="middle" font-size="18" fill="#1e1e1e">It guesses about your project.</text>
+<rect x="420" y="370" width="340" height="100" rx="12" fill="#b2f2bb" stroke="#22c55e" stroke-width="2"/>
+<text x="590.0" y="402.9" text-anchor="middle" font-size="18" font-weight="700" fill="#1e1e1e">With MCP</text>
+<text x="590.0" y="426.3" text-anchor="middle" font-size="18" fill="#1e1e1e">The AI can look things up</text>
+<text x="590.0" y="449.7" text-anchor="middle" font-size="18" fill="#1e1e1e">and do things for you.</text>
+<text x="40" y="512" font-size="16" fill="#555555">Think of USB-C: one plug shape, many different devices.</text>
+</svg>

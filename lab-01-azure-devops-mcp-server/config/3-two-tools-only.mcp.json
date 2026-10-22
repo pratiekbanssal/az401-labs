@@ -1,0 +1,12 @@
+{
+  "servers": {
+    "ado-remote-mcp": {
+      "url": "https://mcp.dev.azure.com/YOUR_ORG",
+      "type": "http",
+      "headers": {
+        "X-MCP-Tools": "core_list_projects, wit_work_item"
+      }
+    }
+  },
+  "inputs": []
+}

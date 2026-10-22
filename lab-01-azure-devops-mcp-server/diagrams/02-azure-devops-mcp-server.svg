@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 580" width="800" height="580" font-family="Helvetica, Arial, sans-serif">
+<rect width="800" height="580" fill="#ffffff"/>
+<defs>
+<marker id="m0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#1e1e1e"/></marker>
+<marker id="m1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#f59e0b"/></marker>
+</defs>
+<text x="40" y="54" font-size="30" font-weight="700" fill="#1e1e1e">The Azure DevOps MCP Server</text>
+<text x="40" y="84" font-size="18" fill="#555555">Microsoft hosts it for you. Nothing to install.</text>
+<rect x="30" y="150" width="140" height="90" rx="12" fill="#fff3bf" stroke="#f59e0b" stroke-width="2"/>
+<text x="100.0" y="179.8" text-anchor="middle" font-size="16" font-weight="700" fill="#1e1e1e">You</text>
+<text x="100.0" y="200.6" text-anchor="middle" font-size="16" fill="#1e1e1e">ask in plain</text>
+<text x="100.0" y="221.4" text-anchor="middle" font-size="16" fill="#1e1e1e">English</text>
+<rect x="200" y="150" width="170" height="90" rx="12" fill="#a5d8ff" stroke="#4a9eed" stroke-width="2"/>
+<text x="285.0" y="179.8" text-anchor="middle" font-size="16" font-weight="700" fill="#1e1e1e">VS Code</text>
+<text x="285.0" y="200.6" text-anchor="middle" font-size="16" fill="#1e1e1e">Copilot in</text>
+<text x="285.0" y="221.4" text-anchor="middle" font-size="16" fill="#1e1e1e">agent mode</text>
+<rect x="400" y="140" width="210" height="110" rx="12" fill="#d0bfff" stroke="#8b5cf6" stroke-width="2"/>
+<text x="505.0" y="179.8" text-anchor="middle" font-size="16" font-weight="700" fill="#1e1e1e">Azure DevOps</text>
+<text x="505.0" y="200.6" text-anchor="middle" font-size="16" fill="#1e1e1e">MCP Server</text>
+<text x="505.0" y="221.4" text-anchor="middle" font-size="16" fill="#1e1e1e">mcp.dev.azure.com</text>
+<rect x="640" y="150" width="130" height="90" rx="12" fill="#ffd8a8" stroke="#f59e0b" stroke-width="2"/>
+<text x="705.0" y="179.8" text-anchor="middle" font-size="16" font-weight="700" fill="#1e1e1e">Microsoft</text>
+<text x="705.0" y="200.6" text-anchor="middle" font-size="16" fill="#1e1e1e">Entra ID</text>
+<text x="705.0" y="221.4" text-anchor="middle" font-size="16" fill="#1e1e1e">signs you in</text>
+<line x1="170" y1="195" x2="200" y2="195" stroke="#1e1e1e" stroke-width="2" marker-end="url(#m0)"/>
+<line x1="370" y1="195" x2="400" y2="195" stroke="#1e1e1e" stroke-width="2" marker-end="url(#m0)"/>
+<line x1="610" y1="195" x2="640" y2="195" stroke="#f59e0b" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#m1)"/>
+<rect x="30" y="320" width="740" height="170" rx="14" fill="#e5dbff" fill-opacity="0.4" stroke="#8b5cf6" stroke-width="1"/>
+<text x="50" y="350" font-size="18" fill="#5f3dc4">Your Azure DevOps organization</text>
+<line x1="505" y1="250" x2="505" y2="320" stroke="#1e1e1e" stroke-width="2" marker-end="url(#m0)"/>
+<rect x="50" y="380" width="130" height="70" rx="12" fill="#b2f2bb" stroke="#22c55e" stroke-width="2"/>
+<text x="115.0" y="410.2" text-anchor="middle" font-size="16" font-weight="700" fill="#1e1e1e">Boards</text>
+<text x="115.0" y="431.0" text-anchor="middle" font-size="16" fill="#1e1e1e">work items</text>
+<rect x="195" y="380" width="130" height="70" rx="12" fill="#b2f2bb" stroke="#22c55e" stroke-width="2"/>
+<text x="260.0" y="410.2" text-anchor="middle" font-size="16" font-weight="700" fill="#1e1e1e">Repos</text>
+<text x="260.0" y="431.0" text-anchor="middle" font-size="16" fill="#1e1e1e">code, PRs</text>
+<rect x="340" y="380" width="130" height="70" rx="12" fill="#b2f2bb" stroke="#22c55e" stroke-width="2"/>
+<text x="405.0" y="410.2" text-anchor="middle" font-size="16" font-weight="700" fill="#1e1e1e">Pipelines</text>
+<text x="405.0" y="431.0" text-anchor="middle" font-size="16" fill="#1e1e1e">builds</text>
+<rect x="485" y="380" width="130" height="70" rx="12" fill="#b2f2bb" stroke="#22c55e" stroke-width="2"/>
+<text x="550.0" y="410.2" text-anchor="middle" font-size="16" font-weight="700" fill="#1e1e1e">Wiki</text>
+<text x="550.0" y="431.0" text-anchor="middle" font-size="16" fill="#1e1e1e">pages</text>
+<rect x="630" y="380" width="120" height="70" rx="12" fill="#b2f2bb" stroke="#22c55e" stroke-width="2"/>
+<text x="690.0" y="420.6" text-anchor="middle" font-size="16" fill="#1e1e1e">Test Plans</text>
+<text x="30" y="538" font-size="18" fill="#1e1e1e">The AI can only see and do what YOU are allowed to see and do.</text>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" font-family="Helvetica, Arial, sans-serif">
+<rect width="800" height="500" fill="#ffffff"/>
+<defs>
+<marker id="m0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#1e1e1e"/></marker>
+</defs>
+<text x="40" y="54" font-size="30" font-weight="700" fill="#1e1e1e">Who decides what the AI can do?</text>
+<text x="40" y="84" font-size="18" fill="#555555">Three locks. Every action must pass all three.</text>
+<rect x="30" y="130" width="220" height="170" rx="12" fill="#d0bfff" stroke="#8b5cf6" stroke-width="2"/>
+<text x="140.0" y="187.8" text-anchor="middle" font-size="17" font-weight="700" fill="#1e1e1e">Lock 1</text>
+<text x="140.0" y="209.9" text-anchor="middle" font-size="17" fill="#1e1e1e">Your mcp.json</text>
+<text x="140.0" y="232.0" text-anchor="middle" font-size="17" fill="#1e1e1e">turns tools on or off</text>
+<text x="140.0" y="254.1" text-anchor="middle" font-size="17" fill="#1e1e1e">(toolsets, read-only)</text>
+<line x1="250" y1="215" x2="290" y2="215" stroke="#1e1e1e" stroke-width="2" marker-end="url(#m0)"/>
+<rect x="290" y="130" width="220" height="170" rx="12" fill="#ffd8a8" stroke="#f59e0b" stroke-width="2"/>
+<text x="400.0" y="187.8" text-anchor="middle" font-size="17" font-weight="700" fill="#1e1e1e">Lock 2</text>
+<text x="400.0" y="209.9" text-anchor="middle" font-size="17" fill="#1e1e1e">Sign-in permission</text>
+<text x="400.0" y="232.0" text-anchor="middle" font-size="17" fill="#1e1e1e">what the app was</text>
+<text x="400.0" y="254.1" text-anchor="middle" font-size="17" fill="#1e1e1e">allowed to ask for</text>
+<line x1="510" y1="215" x2="550" y2="215" stroke="#1e1e1e" stroke-width="2" marker-end="url(#m0)"/>
+<rect x="550" y="130" width="220" height="170" rx="12" fill="#a5d8ff" stroke="#4a9eed" stroke-width="2"/>
+<text x="660.0" y="187.8" text-anchor="middle" font-size="17" font-weight="700" fill="#1e1e1e">Lock 3</text>
+<text x="660.0" y="209.9" text-anchor="middle" font-size="17" fill="#1e1e1e">Your own access</text>
+<text x="660.0" y="232.0" text-anchor="middle" font-size="17" fill="#1e1e1e">what your account can</text>
+<text x="660.0" y="254.1" text-anchor="middle" font-size="17" fill="#1e1e1e">do in Azure DevOps</text>
+<line x1="400" y1="300" x2="400" y2="350" stroke="#1e1e1e" stroke-width="2" marker-end="url(#m0)"/>
+<rect x="30" y="350" width="740" height="90" rx="12" fill="#b2f2bb" stroke="#22c55e" stroke-width="2"/>
+<text x="400.0" y="389.0" text-anchor="middle" font-size="20" font-weight="700" fill="#1e1e1e">An action works only if all three locks say yes.</text>
+<text x="400.0" y="415.0" text-anchor="middle" font-size="20" fill="#1e1e1e">The AI can never do more than you can.</text>
+</svg>
